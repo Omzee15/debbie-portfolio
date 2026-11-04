@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Debbie's Depot | Portfolio</title>
+  <meta name="description" content="Debbie's portfolio: a depot of seven shipping containers. Pick one and the crane brings it over." />
+  <meta name="theme-color" content="#1b62d6" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b62d6'/%3E%3Crect x='5' y='10' width='22' height='13' rx='1' fill='%23e0261c'/%3E%3Cpath d='M16 10v13' stroke='%23fff' stroke-width='1.5'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <div id="bigword" aria-hidden="true"><span>PORT</span><span>FOLIO</span></div>
+  <canvas id="depot" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <button class="logo" data-close>debbie</button>
+    <nav aria-label="Main">
+      <button data-open="work">Work</button>
+      <button data-open="about">About</button>
+      <button data-open="process">Process</button>
+      <button data-open="contact">Contact</button>
+    </nav>
+    <button class="talk" data-open="contact">Let's Talk <span aria-hidden="true">↗</span></button>
+  </header>
+
+  <p class="caption">Debbie's Depot · 7 Containers · 2026</p>
+
+  <!-- Keyboard and screen-reader route to every container. Becomes the visible menu if WebGL is unavailable. -->
+  <ul class="pile-list" aria-label="Containers">
+    <li><button data-open="hello">Portfolio</button></li>
+    <li><button data-open="services">What I do</button></li>
+    <li><button data-open="work">The work</button></li>
+    <li><button data-open="about">About me</button></li>
+    <li><button data-open="process">Process</button></li>
+    <li><button data-open="toolkit">Toolkit</button></li>
+    <li><button data-open="contact">Say hello</button></li>
+  </ul>
+
+  <button class="pill" id="pill" type="button"><span id="pill-text">Pick a container ↓</span></button>
+
+  <aside id="panel" role="dialog" aria-live="polite" aria-label="Container contents" tabindex="-1" hidden>
+    <button class="put-back" data-close aria-label="Close and put this container back">Put back <span aria-hidden="true">✕</span></button>
+
+    <!-- ───── EDIT YOUR CONTENT BELOW. Everything marked PLACEHOLDER is sample copy. ───── -->
+
+    <section data-panel="hello" aria-label="Hello" hidden>
+      <div class="col-lead">
+        <p class="eyebrow">01 / Hello</p>
+        <h2>Hi, I'm <em>Debbie.</em></h2>
+      </div>
+      <div class="col-body">
+        <p class="lede">A vibe coder with a curious mind, building playful digital experiences. Every container in the pile holds a piece of my work.</p>
+        <div class="actions">
+          <button class="btn" data-open="work">See the work →</button>
+          <button class="btn ghost" data-open="contact">Say hello</button>
+        </div>
+      </div>
+    </section>
+
+    <section data-panel="services" aria-label="What I do" hidden>
+      <div class="col-lead">
+        <p class="eyebrow">02 / What I do</p>
+        <h2>Websites with a <em>pulse.</em></h2>
+      </div>
+      <!-- PLACEHOLDER -->
+      <ul class="col-body rows">
+        <li><b>Interactive sites</b><span>Pages people play with before they read them.</span></li>
+        <li><b>3D on the web</b><span>Real-time scenes that run in a browser tab.</span></li>
+        <li><b>Fast prototypes</b><span>A clickable idea by Friday, not a slide about one.</span></li>
+        <li><b>Motion and detail</b><span>The small moves that make an interface feel alive.</span></li>
+      </ul>
+    </section>
+
+    <section data-panel="work" aria-label="The work" hidden>
+      <div class="col-lead">
+        <p class="eyebrow">03 / The work</p>
+        <h2>Fresh off the <em>boat.</em></h2>
+      </div>
+      <!-- PLACEHOLDER: swap in real projects and links -->
+      <ul class="col-body rows linked">
+        <li><a href="#work"><b>Debbie's Depot</b><span>This site. A working crane in Three.js.</span><i aria-hidden="true">↗</i></a></li>
+        <li><a href="#work"><b>Tiny Weather</b><span>A forecast you can poke. Web toy.</span><i aria-hidden="true">↗</i></a></li>
+        <li><a href="#work"><b>Snack Radar</b><span>Find the good vending machines. Prototype.</span><i aria-hidden="true">↗</i></a></li>
+        <li><a href="#work"><b>Loop Garden</b><span>Generative plants that grow to a beat. Sketch.</span><i aria-hidden="true">↗</i></a></li>
+      </ul>
+    </section>
+
+    <section data-panel="about" aria-label="About me" hidden>
+      <div class="col-lead">
+        <p class="eyebrow">04 / About me</p>
+        <h2>Curious, <em>mostly.</em></h2>
+      </div>
+      <!-- PLACEHOLDER -->
+      <div class="col-body">
+        <p class="lede">I learn by building. If something on the internet makes me say "how did they do that", I'm already opening a new project to find out.</p>
+        <p>I care about the feel of things: how a button lands, how a page moves, whether anyone smiled while using it.</p>
+      </div>
+    </section>
+
+    <section data-panel="process" aria-label="Process" hidden>
+      <div class="col-lead">
+        <p class="eyebrow">05 / Process</p>
+        <h2>Four moves, <em>no magic.</em></h2>
+      </div>
+      <!-- PLACEHOLDER -->
+      <ol class="col-body steps">
+        <li><b>Poke</b><span>Ask questions until the real problem shows up.</span></li>
+        <li><b>Sketch</b><span>Get a rough version running as early as possible.</span></li>
+        <li><b>Play</b><span>Put it in people's hands and watch what they do.</span></li>
+        <li><b>Ship</b><span>Polish what matters, cut the rest, send it.</span></li>
+      </ol>
+    </section>
+
+    <section data-panel="toolkit" aria-label="Toolkit" hidden>
+      <div class="col-lead">
+        <p class="eyebrow">06 / Toolkit</p>
+        <h2>What's in the <em>box.</em></h2>
+      </div>
+      <!-- PLACEHOLDER -->
+      <div class="col-body">
+        <ul class="chips">
+          <li>Three.js</li><li>GSAP</li><li>JavaScript</li><li>HTML &amp; CSS</li><li>Vite</li><li>Figma</li><li>Claude Code</li><li>Blender</li><li>A lot of coffee</li>
+        </ul>
+      </div>
+    </section>
+
+    <section data-panel="contact" aria-label="Say hello" hidden>
+      <div class="col-lead">
+        <p class="eyebrow">07 / Say hello</p>
+        <h2>Got a project? <em>Load it up.</em></h2>
+      </div>
+      <!-- PLACEHOLDER: replace the email and profile links -->
+      <div class="col-body">
+        <a class="mail" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
+        <ul class="socials">
+          <li><a href="#contact">Instagram</a></li>
+          <li><a href="#contact">GitHub</a></li>
+          <li><a href="#contact">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+  </aside>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
