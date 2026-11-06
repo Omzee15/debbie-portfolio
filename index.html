@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Debbie's Depot | Portfolio</title>
-  <meta name="description" content="Debbie's portfolio: a depot of seven shipping containers. Pick one and the crane brings it over." />
+  <title>Om Gupta | Portfolio</title>
+  <meta name="description" content="Om Gupta's portfolio: AI-first products, web apps and robotics, packed into seven shipping containers. Pick one and the crane brings it over." />
   <meta name="theme-color" content="#1b62d6" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b62d6'/%3E%3Crect x='5' y='10' width='22' height='13' rx='1' fill='%23e0261c'/%3E%3Cpath d='M16 10v13' stroke='%23fff' stroke-width='1.5'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="/src/styles.css" />
@@ -14,17 +14,17 @@
   <canvas id="depot" aria-hidden="true"></canvas>
 
   <header class="nav">
-    <button class="logo" data-close>debbie</button>
+    <button class="logo" data-close>om</button>
     <nav aria-label="Main">
       <button data-open="work">Work</button>
       <button data-open="about">About</button>
-      <button data-open="process">Process</button>
+      <button data-open="experience">Experience</button>
       <button data-open="contact">Contact</button>
     </nav>
     <button class="talk" data-open="contact">Let's Talk <span aria-hidden="true">↗</span></button>
   </header>
 
-  <p class="caption">Debbie's Depot · 7 Containers · 2026</p>
+  <p class="caption">Om's Depot · 7 Containers · 2026</p>
 
   <!-- Keyboard and screen-reader route to every container. Becomes the visible menu if WebGL is unavailable. -->
   <ul class="pile-list" aria-label="Containers">
@@ -32,7 +32,7 @@
     <li><button data-open="services">What I do</button></li>
     <li><button data-open="work">The work</button></li>
     <li><button data-open="about">About me</button></li>
-    <li><button data-open="process">Process</button></li>
+    <li><button data-open="experience">Experience &amp; wins</button></li>
     <li><button data-open="toolkit">Toolkit</button></li>
     <li><button data-open="contact">Say hello</button></li>
   </ul>
@@ -42,15 +42,15 @@
   <aside id="panel" role="dialog" aria-live="polite" aria-label="Container contents" tabindex="-1" hidden>
     <button class="put-back" data-close aria-label="Close and put this container back">Put back <span aria-hidden="true">✕</span></button>
 
-    <!-- ───── EDIT YOUR CONTENT BELOW. Everything marked PLACEHOLDER is sample copy. ───── -->
+    <!-- ───── EDIT YOUR CONTENT BELOW. Profile data is from the Deskfolio project. ───── -->
 
     <section data-panel="hello" aria-label="Hello" hidden>
       <div class="col-lead">
         <p class="eyebrow">01 / Hello</p>
-        <h2>Hi, I'm <em>Debbie.</em></h2>
+        <h2>Hi, I'm <em>Om.</em></h2>
       </div>
       <div class="col-body">
-        <p class="lede">A vibe coder with a curious mind, building playful digital experiences. Every container in the pile holds a piece of my work.</p>
+        <p class="lede">An AI-first builder working across AI and robotics. Every container in the pile holds a piece of my work.</p>
         <div class="actions">
           <button class="btn" data-open="work">See the work →</button>
           <button class="btn ghost" data-open="contact">Say hello</button>
@@ -61,55 +61,69 @@
     <section data-panel="services" aria-label="What I do" hidden>
       <div class="col-lead">
         <p class="eyebrow">02 / What I do</p>
-        <h2>Websites with a <em>pulse.</em></h2>
+        <h2>Products with a <em>brain.</em></h2>
       </div>
-      <!-- PLACEHOLDER -->
       <ul class="col-body rows">
-        <li><b>Interactive sites</b><span>Pages people play with before they read them.</span></li>
-        <li><b>3D on the web</b><span>Real-time scenes that run in a browser tab.</span></li>
-        <li><b>Fast prototypes</b><span>A clickable idea by Friday, not a slide about one.</span></li>
-        <li><b>Motion and detail</b><span>The small moves that make an interface feel alive.</span></li>
+        <li><b>AI products</b><span>LLM apps on LangChain and Gemini, from resume parsers to bill readers.</span></li>
+        <li><b>Full-stack web</b><span>React front ends on Go and FastAPI back ends, backed by PostgreSQL.</span></li>
+        <li><b>Robotics</b><span>Robots on Raspberry Pi that listen, reason and talk back.</span></li>
+        <li><b>Desktop tools</b><span>Electron apps like NeuroDB, used by 25,000+ people.</span></li>
       </ul>
     </section>
 
-    <section data-panel="work" aria-label="The work" hidden>
+    <section class="dense" data-panel="work" aria-label="The work" hidden>
       <div class="col-lead">
         <p class="eyebrow">03 / The work</p>
-        <h2>Fresh off the <em>boat.</em></h2>
+        <h2>Everything I <em>built.</em></h2>
       </div>
-      <!-- PLACEHOLDER: swap in real projects and links -->
       <ul class="col-body rows linked">
-        <li><a href="#work"><b>Debbie's Depot</b><span>This site. A working crane in Three.js.</span><i aria-hidden="true">↗</i></a></li>
-        <li><a href="#work"><b>Tiny Weather</b><span>A forecast you can poke. Web toy.</span><i aria-hidden="true">↗</i></a></li>
-        <li><a href="#work"><b>Snack Radar</b><span>Find the good vending machines. Prototype.</span><i aria-hidden="true">↗</i></a></li>
-        <li><a href="#work"><b>Loop Garden</b><span>Generative plants that grow to a beat. Sketch.</span><i aria-hidden="true">↗</i></a></li>
+        <li><a href="https://neurodb.buildc3.tech/" target="_blank" rel="noreferrer"><b>NeuroDB<small>PostgreSQL · Gemini</small></b><span>AI PostgreSQL desktop manager with natural-language SQL and DBML diagrams. 25,000+ active users.</span><i aria-hidden="true">↗</i></a></li>
+        <li><a href="https://portfolio-template.buildc3.tech/" target="_blank" rel="noreferrer"><b>HireScout<small>Gemini · LangChain</small></b><span>Mock interviews with resume parsing, live voice and AI feedback. 1,200 daily users.</span><i aria-hidden="true">↗</i></a></li>
+        <li><a href="https://billsbot.buildc3.tech/" target="_blank" rel="noreferrer"><b>BillBot<small>FastAPI · PostgreSQL</small></b><span>Telegram bot that reads bill photos with Gemini and tracks them live.</span><i aria-hidden="true">↗</i></a></li>
+        <li><a href="https://echodcrypt.buildc3.tech/" target="_blank" rel="noreferrer"><b>EchoDcrypt<small>Canvas · Electron</small></b><span>Hides messages inside images and video, without data leaving the device.</span><i aria-hidden="true">↗</i></a></li>
+        <li><a href="https://projectnest.buildc3.tech/" target="_blank" rel="noreferrer"><b>ProjectNest<small>React · Go</small></b><span>Project management with JWT auth, visual collaboration and a DevSprint-AI assistant.</span><i aria-hidden="true">↗</i></a></li>
+        <li><a href="https://portfolio-template.buildc3.tech/" target="_blank" rel="noreferrer"><b>Explainable AI<small>Python · SHAP · LIME</small></b><span>A Random Forest Titanic model explained with SHAP, feature importance and decision boundaries.</span><i aria-hidden="true">↗</i></a></li>
       </ul>
     </section>
 
     <section data-panel="about" aria-label="About me" hidden>
       <div class="col-lead">
         <p class="eyebrow">04 / About me</p>
-        <h2>Curious, <em>mostly.</em></h2>
+        <h2>Messy problems, <em>working systems.</em></h2>
       </div>
-      <!-- PLACEHOLDER -->
       <div class="col-body">
-        <p class="lede">I learn by building. If something on the internet makes me say "how did they do that", I'm already opening a new project to find out.</p>
-        <p>I care about the feel of things: how a button lands, how a page moves, whether anyone smiled while using it.</p>
+        <p class="lede">I build AI-first products that turn messy real-world problems into useful, working systems, from intelligent web apps to robotics that can listen, reason, and respond.</p>
+        <p class="subhead">Currently</p>
+        <ul class="rows tight">
+          <li><b>B.Tech CSE (AIML)</b><span>SMIT</span></li>
+          <li><b>Diploma in Robotics</b><span>VES Polytechnic</span></li>
+        </ul>
+        <ul class="chips">
+          <li>10+ projects</li><li>40k+ users</li><li>10+ national awards</li>
+        </ul>
       </div>
     </section>
 
-    <section data-panel="process" aria-label="Process" hidden>
+    <section class="dense" data-panel="experience" aria-label="Experience and wins" hidden>
       <div class="col-lead">
-        <p class="eyebrow">05 / Process</p>
-        <h2>Four moves, <em>no magic.</em></h2>
+        <p class="eyebrow">05 / Experience &amp; wins</p>
+        <h2>Where I've <em>shipped.</em></h2>
       </div>
-      <!-- PLACEHOLDER -->
-      <ol class="col-body steps">
-        <li><b>Poke</b><span>Ask questions until the real problem shows up.</span></li>
-        <li><b>Sketch</b><span>Get a rough version running as early as possible.</span></li>
-        <li><b>Play</b><span>Put it in people's hands and watch what they do.</span></li>
-        <li><b>Ship</b><span>Polish what matters, cut the rest, send it.</span></li>
-      </ol>
+      <div class="col-body">
+        <ul class="rows tight">
+          <li><b>Software Engineering Intern</b><span>Pi-Labs · Go, PostgreSQL, Docker, JWT/RBAC, AI and audio workflows.</span></li>
+          <li><b>AI &amp; Robotics Developer</b><span>iHub SMIT · SmitBot on Raspberry Pi 5 with LLaMA, Piper TTS, STT and servo gestures.</span></li>
+          <li><b>Software Engineering Simulation</b><span>J.P. Morgan Chase &amp; Co. · Spring Boot, Kafka, JPA, H2, REST APIs.</span></li>
+          <li><b>GenAI Job Simulation</b><span>Boston Consulting Group · AI financial chatbot with Python, pandas and SEC filings.</span></li>
+        </ul>
+        <p class="subhead">First place at</p>
+        <ul class="rows tight">
+          <li><b>Devopia'24</b><span>Autonomous drone delivery system.</span></li>
+          <li><b>Techno-Innova'23</b><span>AI predictive maintenance research.</span></li>
+          <li><b>Protech 2023</b><span>IoT soil examining system for agriculture.</span></li>
+          <li><b>Technothon'21</b><span>AI-powered stock management system.</span></li>
+        </ul>
+      </div>
     </section>
 
     <section data-panel="toolkit" aria-label="Toolkit" hidden>
@@ -117,10 +131,14 @@
         <p class="eyebrow">06 / Toolkit</p>
         <h2>What's in the <em>box.</em></h2>
       </div>
-      <!-- PLACEHOLDER -->
       <div class="col-body">
+        <p class="subhead">I build with</p>
         <ul class="chips">
-          <li>Three.js</li><li>GSAP</li><li>JavaScript</li><li>HTML &amp; CSS</li><li>Vite</li><li>Figma</li><li>Claude Code</li><li>Blender</li><li>A lot of coffee</li>
+          <li>Go</li><li>React</li><li>TypeScript</li><li>Python</li><li>PostgreSQL</li><li>FastAPI</li><li>Docker</li><li>Electron</li>
+        </ul>
+        <p class="subhead">AI stack</p>
+        <ul class="chips">
+          <li>LangChain</li><li>Gemini</li><li>TensorFlow</li><li>Robotics</li><li>Kafka</li><li>KiCad</li>
         </ul>
       </div>
     </section>
@@ -128,15 +146,14 @@
     <section data-panel="contact" aria-label="Say hello" hidden>
       <div class="col-lead">
         <p class="eyebrow">07 / Say hello</p>
-        <h2>Got a project? <em>Load it up.</em></h2>
+        <h2>Let's make <em>something.</em></h2>
       </div>
-      <!-- PLACEHOLDER: replace the email and profile links -->
       <div class="col-body">
-        <a class="mail" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
+        <a class="mail" href="https://www.linkedin.com/in/om-gupta915/" target="_blank" rel="noreferrer">Message me on LinkedIn <span aria-hidden="true">↗</span></a>
         <ul class="socials">
-          <li><a href="#contact">Instagram</a></li>
-          <li><a href="#contact">GitHub</a></li>
-          <li><a href="#contact">LinkedIn</a></li>
+          <li><a href="https://github.com/Omzee15" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://instagram.com/om_gupta915" target="_blank" rel="noreferrer">Instagram</a></li>
+          <li><a href="https://buildc3.tech/" target="_blank" rel="noreferrer">buildc3.tech</a></li>
         </ul>
       </div>
     </section>

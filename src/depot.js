@@ -13,7 +13,7 @@ const SLOTS_WIDE = [
   { sx: -0.49, sy: -0.31, z: -1.2, rx: 0.3, ry: -0.3, rz: 0.2 }, // WHAT I DO
   { sx: -0.74, sy: -0.66, z: 1.2, rx: 0.32, ry: 0.28, rz: -0.13 }, // THE WORK
   { sx: -0.27, sy: -0.74, z: 1.6, rx: 0.3, ry: -0.2, rz: 0.1 }, // ABOUT ME
-  { sx: 0.2, sy: -0.7, z: 1.5, rx: 0.32, ry: 0.22, rz: -0.1 }, // PROCESS
+  { sx: 0.2, sy: -0.7, z: 1.5, rx: 0.32, ry: 0.22, rz: -0.1 }, // XP & WINS
   { sx: 0.71, sy: -0.68, z: 1.3, rx: 0.3, ry: -0.28, rz: 0.08 }, // TOOL KIT
   { sx: 0.43, sy: -0.32, z: -1.3, rx: 0.3, ry: 0.28, rz: -0.24 }, // SAY HELLO
 ];

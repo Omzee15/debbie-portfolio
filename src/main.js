@@ -7,7 +7,7 @@ const ITEMS = [
   { id: 'services', label: ['WHAT', 'I DO'], number: '02', color: 0xe0261c, name: 'What I do' },
   { id: 'work', label: ['THE', 'WORK'], number: '03', color: 0xea5a14, name: 'The work' },
   { id: 'about', label: ['ABOUT', 'ME'], number: '04', color: 0x2344d6, name: 'About me' },
-  { id: 'process', label: ['PRO', 'CESS'], number: '05', color: 0xf0a90c, name: 'Process' },
+  { id: 'experience', label: ['XP &', 'WINS'], number: '05', color: 0xf0a90c, name: 'Experience' },
   { id: 'toolkit', label: ['TOOL', 'KIT'], number: '06', color: 0xa2a5a9, name: 'Toolkit' },
   { id: 'contact', label: ['SAY', 'HELLO'], number: '07', color: 0x2344d6, name: 'Say hello' },
 ];

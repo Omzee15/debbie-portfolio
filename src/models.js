@@ -133,7 +133,7 @@ function plateTexture(number, renderer) {
   ctx.font = `800 expanded 44px "Archivo Variable", sans-serif`;
   ctx.fillText(number, 248, 56);
   ctx.font = `700 expanded 26px "Archivo Variable", sans-serif`;
-  ctx.fillText('DEBBIE', 248, 100);
+  ctx.fillText('OM GUPTA', 248, 100);
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = THREE.SRGBColorSpace;
   tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
